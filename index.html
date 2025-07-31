@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carlos Daniel - Portfolio</title>
+
+    <!-- Fonte Poppins do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Font Awesome (ícones) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <h1>Carlos Daniel</h1>
+        <img src="img/perfil.jpg" alt="Carlos Daniel" class="profile-img">
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            I am a recent graduate in Systems Analysis and Development, with a strong focus on Web Development.<br>
+            This portfolio was created to showcase the projects I have developed and to receive constructive feedback that will help me grow professionally.<br><br>
+            I am highly disciplined, committed, and diligent in everything I do. I strive to stay actively engaged in my tasks and contribute positively to team dynamics.
+        </p>
+    </section>
+
+    <section class="skills">
+    <h2>Skills</h2>
+
+<section class="skills">
+    <h2>Skills</h2>
+
+    <div class="skill">
+        <span><i class="fab fa-html5"></i> HTML</span>
+        <div class="skill-bar">
+            <div class="skill-level" data-skill="90%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <span><i class="fab fa-css3-alt"></i> CSS</span>
+        <div class="skill-bar">
+            <div class="skill-level" data-skill="85%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <span><i class="fab fa-js-square"></i> JavaScript</span>
+        <div class="skill-bar">
+            <div class="skill-level" data-skill="70%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <span><i class="fab fa-python"></i> Python</span>
+        <div class="skill-bar">
+            <div class="skill-level" data-skill="75%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <span><i class="fab fa-git-alt"></i> Git & GitHub</span>
+        <div class="skill-bar">
+            <div class="skill-level" data-skill="80%"></div>
+        </div>
+    </div>
+</section>
+
+</section>
+
+    <section class="projects">
+    <h2>Projects</h2>
+    
+    <div class="project-card">
+        <h3>Personal Portfolio Website</h3>
+        <p>A responsive portfolio website built using HTML, CSS, and JavaScript. This project showcases my skills and personal information in a clean layout.</p>
+        <a href="#" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-card">
+        <h3>Task Manager App</h3>
+        <p>A simple to-do list web application that allows users to manage daily tasks. Built with JavaScript and localStorage.</p>
+        <a href="#" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-card">
+        <h3>Login Page UI</h3>
+        <p>Modern and minimal login screen designed for a mobile-first experience, built with responsive CSS Flexbox.</p>
+        <a href="#" target="_blank">View Project</a>
+    </div>
+</section>
+
+    <section class="contact">
+        <p>
+    <strong>LinkedIn:</strong> 
+    <a href="https://www.linkedin.com/in/carlos-daniel-de-sousa-alencar-47339127a" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i> linkedin.com/in/carlos-daniel-de-sousa-alencar-47339127a
+    </a>
+</p>
+
+        <h2>Contact</h2>
+        <p>
+            <strong>Phone:</strong> +55 61 99306-0952<br>
+            <strong>Email:</strong> <a href="mailto:alencarcarlos2099@gmail.com">alencarcarlos2099@gmail.com</a>
+        </p>
+    </section>
+
+    <footer>
+        &copy; 2025 Carlos Daniel. All rights reserved.
+    </footer>
+    <script>
+    window.addEventListener('load', function () {
+        const skills = document.querySelectorAll('.skill-level');
+        skills.forEach(skill => {
+            const level = skill.getAttribute('data-skill');
+            skill.style.width = level;
+        });
+    });
+</script>
+
+</body>
+</html>
